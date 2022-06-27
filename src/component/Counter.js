@@ -1,5 +1,6 @@
 import React from "react";
 
+// 컨테이너 컴포넌트
 function Counter({ onIncrease, onDecrease, number }) {
   return (
     <div>
