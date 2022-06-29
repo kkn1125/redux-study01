@@ -1,6 +1,6 @@
 import React, { memo, useState } from "react";
 
-const TodoItem = memo(function Todos({ todo, onToggle }) {
+const TodoItem = memo(function TodoItem({ todo, onToggle }) {
   return (
     <li
       style={{ textDecoration: todo.done ? "line-through" : "none" }}
@@ -39,7 +39,7 @@ function Todos({ todos, onCreate, onToggle }) {
           placeholder='할 일을 입력하세요.'
           onChange={onChange}
         />
-        <button>등록</button>
+        <button type='submit'>등록</button>
       </form>
       <TodoList todos={todos} onToggle={onToggle} />
     </div>
